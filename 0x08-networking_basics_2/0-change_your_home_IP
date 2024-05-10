@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#localhost resolves to 127.0.0.2
+#facebook.com resolves to 8.8.8.8.
+# Backup the original hosts file
+sudo cp /etc/hosts /etc/hosts.bak
+# Add custom entries to hosts file
+sudo bash -c 'echo "127.0.0.2 localhost" >> /etc/hosts'
+sudo bash -c 'echo "8.8.8.8 facebook.com" >> /etc/hosts'
+
+echo "Configuration completed:"
+echo "localhost resolves to 127.0.0.2"
+echo "facebook.com resolves to 8.8.8.8"
