@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#ssh configuration to connect to a server without typing word
+Host  *
+    PasswordAuthentication
+    indentityfile  ~/.ssh/school
